@@ -1,4 +1,4 @@
-
+"People deserve to be able to see the code they're running" - Wise programmer
         __  _____   ________ __ __    ____________
        / / / /   | / ____/ //_// /   / ____/_  __/
       / /_/ / /| |/ /   / ,<  / /   / __/   / /   
