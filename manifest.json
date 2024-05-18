@@ -1,0 +1,54 @@
+{
+  "name": "Hacklet",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description":"Made by CrazyH | © Copyright 2023",
+  "homepage_url": "https://github.com/The-Blooket-Hacks/Blooket-Hacks",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://gist.githubusercontent.com/CrazyH2/8450960055c6ac3f594884cc15a489fc/raw/8510f073f88b21273fe87b805a2741725c299250/hackletBtns.js; child-src 'self';"
+  },
+  "background": {
+    "service_worker": "H9Sz2r9yXY.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.blooket.com/",
+        "*://*.blooket.com/*"
+      ],
+      "js": [
+        "eJJMtEp6Gw.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://www.blooket.com/",
+        "*://www.blooket.com/*"
+      ],
+      "js": [
+        "6aLKlNoHZn.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://dashboard.blooket.com/",
+        "*://dashboard.blooket.com/*"
+      ],
+      "js": [
+        "ARUuIr4GfX.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": [
+      "states"
+  ]
+  }],
+  "permissions": ["alarms", "storage", "scripting", "declarativeNetRequest", "browsingData", "tabs"],
+  "host_permissions": ["*://*.blooket.com/", "*://www.blooket.com/", "*://*.blooket.com/*", "*://www.blooket.com/*", "https://gist.githubusercontent.com/CrazyH2/*", "https://github.com/The-Blooket-Hacks/Extension-Database/tree/main/Public/*", "https://raw.githubusercontent.com/The-Blooket-Hacks/Extension-Database/main/Public/*"],
+  "icons": { "128": "icon.png" }
+}
